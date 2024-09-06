@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Servicios - Fabian Florian</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <style>
+        /* Fondo inicial sólido */
+        body {
+            background-color: #2c3e50; /* Color sólido que actúa como fondo de reserva */
+            color: white;
+            transition: background 0.5s ease; /* Transición para el cambio de fondo */
+        }
+        
+        /* Animación de fondo */
+        .bg-animated {
+            background: linear-gradient(270deg, #ff7e5f, #feb47b);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+        
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Otros estilos */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .fade-in.appear {
+            opacity: 1;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .carousel-item {
+            transition: transform 0.6s ease-in-out;
+        }
+        .img-fluid:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        
+        /* Estilos de footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-dark text-white p-3 sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <img src="https://via.placeholder.com/50" alt="Logo" class="me-2"> <!-- Logo lateral -->
+            <span class="h4">Mi Portafolio</span>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a href="#sobre-mi" class="nav-link text-white">Sobre mí</a></li>
+                <li class="nav-item"><a href="#tecnologias" class="nav-link text-white">Tecnologías</a></li>
+                <li class="nav-item"><a href="#portafolio" class="nav-link text-white">Portafolio</a></li>
+                <li class="nav-item"><a href="#testimonios" class="nav-link text-white">Testimonios</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link text-white">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Sección Sobre mí -->
+<section id="sobre-mi" class="py-5 fade-in bg-dark-1">
+    <div class="container text-center">
+        <h2>Sobre mí</h2>
+        <img src="https://via.placeholder.com/150" alt="Foto personal" class="rounded-circle my-4 img-fluid">
+        <p>Hola, soy Fabian Florian, un desarrollador FullStack apasionado por la tecnología. Cuento con experiencia en varios lenguajes de programación y frameworks.</p>
+    </div>
+</section>
+
+<!-- Sección Tecnologías que domino -->
+<section id="tecnologias" class="py-5 bg-dark-2 fade-in">
+    <div class="container text-center">
+        <h2>Tecnologías que domino</h2>
+        <div class="row my-4">
+            <div class="col-6 col-md-2 mx-auto">
+                <img src="https://via.placeholder.com/100x100" alt="HTML" class="img-fluid">
+                <p>HTML</p>
+            </div>
+            <div class="col-6 col-md-2 mx-auto">
+                <img src="https://via.placeholder.com/100x100" alt="CSS" class="img-fluid">
+                <p>CSS</p>
+            </div>
+            <div class="col-6 col-md-2 mx-auto">
+                <img src="https://via.placeholder.com/100x100" alt="JavaScript" class="img-fluid">
+                <p>JavaScript</p>
+            </div>
+            <div class="col-6 col-md-2 mx-auto">
+                <img src="https://via.placeholder.com/100x100" alt="React" class="img-fluid">
+                <p>React</p>
+            </div>
+            <div class="col-6 col-md-2 mx-auto">
+                <img src="https://via.placeholder.com/100x100" alt="MySQL" class="img-fluid">
+                <p>MySQL</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Mi Portafolio -->
+<section id="portafolio" class="py-5 bg-dark-1 fade-in">
+    <div class="container">
+        <h2 class="text-center">Mi Portafolio</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top img-fluid" alt="Proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 1</h5>
+                        <p class="card-text">Descripción breve del proyecto 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top img-fluid" alt="Proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 2</h5>
+                        <p class="card-text">Descripción breve del proyecto 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top img-fluid" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 3</h5>
+                        <p class="card-text">Descripción breve del proyecto 3.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top img-fluid" alt="Proyecto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 4</h5>
+                        <p class="card-text">Descripción breve del proyecto 4.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top img-fluid" alt="Proyecto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 5</h5>
+                        <p class="card-text">Descripción breve del proyecto 5.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top img-fluid" alt="Proyecto 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto 6</h5>
+                        <p class="card-text">Descripción breve del proyecto 6.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Testimonios -->
+<section id="testimonios" class="py-5 bg-dark-2 fade-in">
+    <div class="container">
+        <h2 class="text-center">Testimonios</h2>
+        <div id="carouselTestimonios" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <div class="text-center">
+                            <p>"Fabian es un profesional excelente, siempre entrega a tiempo y con alta calidad."</p>
+                            <p><strong>Cliente 1</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="text-center">
+                            <p>"Su trabajo es impecable, siempre sorprende con soluciones innovadoras."</p>
+                            <p><strong>Cliente 2</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="text-center">
+                            <p>"Un placer trabajar con él, siempre superando nuestras expectativas."</p>
+                            <p><strong>Cliente 3</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselTestimonios" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselTestimonios" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contacto" class="py-5 bg-dark-1 fade-in">
+    <div class="container">
+        <h2 class="text-center">Contacto</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Fabian Florian. Todos los derechos reservados.</p>
+    <p>
+        <a href="#sobre-mi">Sobre mí</a> |
+        <a href="#tecnologias">Tecnologías</a> |
+        <a href="#portafolio">Portafolio</a> |
+        <a href="#testimonios">Testimonios</a> |
+        <a href="#contacto">Contacto</a>
+    </p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Agregar clase para animación de fondo cuando la página esté cargada
+    window.onload = function() {
+        document.body.classList.add('bg-animated');
+        var elements = document.querySelectorAll('.fade-in');
+        elements.forEach(function(element) {
+            element.classList.add('appear');
+        });
+    };
+</script>
+</body>
+</html>
